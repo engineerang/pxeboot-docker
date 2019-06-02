@@ -1,0 +1,21 @@
+version: '3'
+services:
+  # Because of pixiecores requirement to have access to the host network you cannot use traditional 'links' or 'networks' commands
+  pixiecore:
+     container_name: pixiecore
+     image: pixiecore/pixiecore:master
+     restart: always
+     network_mode: "host"
+     command: "api http://127.0.0.1:5000/api --debug --dhcp-no-bind"
+     depends_on:
+        - spriteful
+
+  spriteful:
+     container_name: spriteful
+     build:
+       context: .
+     restart: always
+     volumes:
+        - ./config.json.example:/config/config.json
+     ports:
+        - "127.0.0.1:5000:5000" 
