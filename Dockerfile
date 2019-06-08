@@ -2,10 +2,10 @@
 FROM golang:1.12.5 as builder
 
 # Download Spriteful
-RUN go get github.com/rangineer/spriteful
+RUN go get github.com/engineerang/spriteful
 
 # Set the Current Working Directory inside the container
-WORKDIR /go/src/github.com/rangineer/spriteful
+WORKDIR /go/src/github.com/engineerang/spriteful
 
 # Build the Go app for Alpine
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o /go/bin/spriteful .
