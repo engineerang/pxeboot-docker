@@ -7,7 +7,7 @@ Boot another machine from the same network.
 
 Clone the project:
 ```shell
-git clone https://github.com/computingcats/pxeboot-docker.git
+git clone https://github.com/engineerang/pxeboot-docker.git
 cd pxeboot-docker
 ```
 Change "mac": "00:00:00:00:00:00" or  "mac": "11:11:11:11:11:11" to a machine's mac address you'd like to boot:
@@ -22,7 +22,7 @@ docker-compose up
 ## Why?
 pxeboot-docker is a docker project aimed at making pxebooting trivial. To do this it brings together pixiecore and spriteful to create a minimalist pxebooting service. 
 
-As elegantly covered by [pixiecore](https://github.com/danderson/netboot/tree/master/pixiecore), PXEBooting shouldn't be as hard as it is to setup. And although pixiecore has achieved reducing the complexity, it stops at providing a mechanism to control what configuration a certain machine on your network should boot with, this is where spriteuful comes in. [spriteful](https://github.com/computingcats/spriteful) is an API that provides server boot configurations for pixiecore. 
+As elegantly covered by [pixiecore](https://github.com/danderson/netboot/tree/master/pixiecore), PXEBooting shouldn't be as hard as it is to setup. And although pixiecore has achieved reducing the complexity, it stops at providing a mechanism to control what configuration a certain machine on your network should boot with, this is where spriteuful comes in. [spriteful](https://github.com/engineerang/spriteful) is an API that provides server boot configurations for pixiecore. 
 
 # Installation
 
