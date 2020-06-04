@@ -12,7 +12,7 @@
 			"mac": "11:11:11:11:11:11",
 			"kernel": "http://mirror.centos.org/centos-8/8/BaseOS/x86_64/os/images/pxeboot/vmlinuz",
 			"initrd": [ "http://mirror.centos.org/centos-8/8/BaseOS/x86_64/os/images/pxeboot/initrd.img" ],
-			"cmdline": "method=http://mirror.centos.org/centos-8/8/BaseOS/x86_64/ devfs=nomount ip=dhcp"
+			"cmdline": "method=http://mirror.centos.org/centos-8/8/BaseOS/x86_64/os devfs=nomount ip=dhcp"
 		}
 	]
 }
