@@ -50,17 +50,17 @@ The config.json structure follows the basic concepts of the pxelinux.cfg file, f
 
 ```text
 label 1
-menu label ^2) Install CentOS 7 x64 with http://mirror.centos.org Repo
-kernel centos7/vmlinuz
-append initrd=centos7/initrd.img method=http://mirror.centos.org/centos/7/os/x86_64/ devfs=nomount ip=dhcp
+menu label ^2) Install CentOS 8 x64 with http://mirror.centos.org Repo
+kernel http://mirror.centos.org/centos-8/8/BaseOS/x86_64/os/images/pxeboot/vmlinuz
+append initrd=http://mirror.centos.org/centos-8/8/BaseOS/x86_64/os/images/pxeboot/initrd.img method=http://mirror.centos.org/centos-8/8/BaseOS/x86_64/ devfs=nomount ip=dhcp
 ```
 is equivalent to:
 ```json
 {
     "mac": "your-mac-address-here",
-    "kernel": "http://mirror.centos.org/centos-7/7/os/x86_64/images/pxeboot/vmlinuz",
-    "initrd": [ "http://mirror.centos.org/centos-7/7/os/x86_64/images/pxeboot/initrd.img" ],
-    "cmdline": "method=http://mirror.centos.org/centos/7/os/x86_64/ devfs=nomount ip=dhcp"
+    "kernel": "http://mirror.centos.org/centos-8/8/BaseOS/x86_64/os/images/pxeboot/vmlinuz",
+    "initrd": [ "http://mirror.centos.org/centos-8/8/BaseOS/x86_64/os/images/pxeboot/initrd.img" ],
+    "cmdline": "method=http://mirror.centos.org/centos-8/8/BaseOS/x86_64/ devfs=nomount ip=dhcp"
 }
 ```
 
