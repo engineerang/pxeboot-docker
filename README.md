@@ -44,7 +44,7 @@ pip install docker-compose
 ## Running
 
 ### config.json
-The configuration of machines is done via the config.json. The provided [sample](config.json.example) configuration demonstrates how it can be rudimentarily used for CoreOS or Centos 7 (not at all production ready). 
+The configuration of machines is done via the config.json. The provided [sample](config.json.example) configuration demonstrates how it can be rudimentarily used for CoreOS or Centos 8 (not at all production ready). 
 
 The config.json structure follows the basic concepts of the pxelinux.cfg file, for example:
 
