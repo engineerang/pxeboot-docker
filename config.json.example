@@ -4,9 +4,9 @@
 	"servers": [
 		{
 			"mac": "00:00:00:00:00:00",
-			"kernel": "http://alpha.release.core-os.net/amd64-usr/current/coreos_production_pxe.vmlinuz",
-			"initrd": [ "http://alpha.release.core-os.net/amd64-usr/current/coreos_production_pxe_image.cpio.gz" ],
-			"cmdline": "coreos.autologin true"
+			"kernel": "http://mirror.centos.org/centos-8/8/BaseOS/x86_64/os/images/pxeboot/vmlinuz",
+			"initrd": [ "http://mirror.centos.org/centos-8/8/BaseOS/x86_64/os/images/pxeboot/initrd.img" ],
+			"cmdline": "method=http://mirror.centos.org/centos-8/8/BaseOS/x86_64/os devfs=nomount ip=dhcp"
 		},
 		{
 			"mac": "11:11:11:11:11:11",
