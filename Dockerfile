@@ -1,5 +1,5 @@
-# Start from golang v1.12.5 base image
-FROM golang:1.12.5 as builder
+# Start from golang base image
+FROM golang:latest as builder
 
 # Download Spriteful
 RUN go get github.com/engineerang/spriteful
